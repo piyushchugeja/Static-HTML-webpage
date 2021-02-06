@@ -1,0 +1,20 @@
+<html>
+  <head>
+  <title>Piyush Chugeja</title>
+    <link rel="stylesheet" href="css/loading.css" />
+  </head>
+  <body>
+    <div class="loader">
+      <img src="images/loading.gif" width="30%" class="center" />
+    </div>
+  </body>
+  <script type="text/javascript">
+    window.addEventListener("load", function () {
+      const loader = document.querySelector(".loader");
+      loader.className += " hidden";
+    });
+    setTimeout(function () {
+      location.replace("index.html");
+    }, 4000);
+  </script>
+</html>
